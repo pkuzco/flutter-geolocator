@@ -36,8 +36,12 @@
     
     _locationManager.desiredAccuracy = accuracy;
     _locationManager.distanceFilter = distanceFilter;
-    _locationManager.allowsBackgroundLocationUpdates = YES;
-    _locationManager.showsBackgroundLocationIndicator = YES;
+    if (@available(iOS 9.0, *)) {
+        _locationManager.allowsBackgroundLocationUpdates = YES;
+    }
+    if (@available(iOS 11.0, *)) {
+        _locationManager.showsBackgroundLocationIndicator = YES;
+    }
 }
 
 - (void)stopTask {
