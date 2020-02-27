@@ -37,6 +37,7 @@
     _locationManager.desiredAccuracy = accuracy;
     _locationManager.distanceFilter = distanceFilter;
     _locationManager.allowsBackgroundLocationUpdates = YES;
+    _locationManager.showsBackgroundLocationIndicator = YES;
 }
 
 - (void)stopTask {
