@@ -40,7 +40,7 @@
         _locationManager.allowsBackgroundLocationUpdates = YES;
     }
     if (@available(iOS 11.0, *)) {
-        //_locationManager.showsBackgroundLocationIndicator = YES;
+        _locationManager.showsBackgroundLocationIndicator = YES;
     }
 }
 
